@@ -33,9 +33,15 @@ const sendForm = () => {
         target.appendChild(statusMessage);
         statusMessage.innerHTML = loadMessage;
 
-        let inputText = target.querySelectorAll('input');
+        let inputText = target.querySelectorAll('input'),
+            priceTotal = target.querySelector('#price-total');
 
         const formData = new FormData();
+
+        
+        if (priceTotal) {
+            formData.append(priceTotal.id, priceTotal.textContent);
+        }
 
         inputText.forEach((item) => {
             if (item.type == "text" || item.type == "tel" || (item.type !== "checkbox" && item.checked)) {

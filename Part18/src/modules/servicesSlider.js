@@ -67,6 +67,8 @@ class SliderCarousel {
                 display: flex !important;
                 transition: transform 0.5s !important;
                 will-change: transform !important;
+                padding: 0 !important;
+                margin: 0 15px !important;
             }
             .glo-slider__item {
                 align-items: center;
@@ -109,8 +111,8 @@ class SliderCarousel {
         this.prev = document.createElement('button');
         this.next = document.createElement('button');
 
-        this.prev.textContent = '<';
-        this.next.textContent = '>';
+        this.prev.innerHTML = '<strong><</strong>';
+        this.next.innerHTML = '<strong>></strong>';
 
         this.prev.className = 'glo-slider__prev';
         this.next.className = 'glo-slider__next';

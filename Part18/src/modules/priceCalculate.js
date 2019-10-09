@@ -11,11 +11,17 @@ const priceCalculate = () => {
     let period = 1,
         discount = 1;
     if (priceTotal) {
-        cardOrder.addEventListener('click', (event) => {
-            let target = event.target;
+        promoVal.addEventListener('input', () => {
             if (promoVal.value == 'ТЕЛО2019') {
                 discount = 0.7;
+            } else {
+                discount = 1;
             }
+            clubCalc(period);
+        });
+
+        cardOrder.addEventListener('click', (event) => {
+            let target = event.target;            
             if (target.name == 'card-type') {
                 checkPeriod();
                 clubCalc(period);
