@@ -23,4 +23,5 @@ const getPopups = () => {
     });
 };
 
+// getPopups();
 export default getPopups;

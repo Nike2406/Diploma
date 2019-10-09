@@ -8,5 +8,6 @@ const correctInput = function () {
         }            
     });
 };
+// correctInput();
 
 export default correctInput;

@@ -111,7 +111,6 @@ const gellarySlider = () => {
     gellarySliderWrap.addEventListener('click', (event) => {
         event.preventDefault();
         let target = event.target;
-        console.log('target: ', target);
 
         if (!target.closest('.glo-slider__next, .glo-slider__prev, .slider-dot')) {
             return;
@@ -126,7 +125,7 @@ const gellarySlider = () => {
             currentSlide++;
         } else if (target.closest('.slider-dot')) {
             dot.forEach((elem, index) => {
-                if (elem === target) {
+                if (elem === target || elem.children[0] === target) {
                     currentSlide = index;
                 }
             });

@@ -9,6 +9,7 @@ import getGift from './modules/getGift';
 import servicesSlider from './modules/servicesSlider';
 import headSlider from './modules/headSlider';
 import gellarySlider from './modules/gellarySlider';
+import priceCalculate from './modules/priceCalculate';
 
 toggleChooseClub();
 getPopups();
@@ -19,3 +20,4 @@ getGift();
 servicesSlider();
 headSlider();
 gellarySlider();
+priceCalculate();

@@ -193,4 +193,5 @@ const carousel = new SliderCarousel ({
 carousel.init();
 };
 
+// servicesSlider();
 export default servicesSlider;

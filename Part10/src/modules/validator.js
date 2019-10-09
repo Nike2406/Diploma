@@ -207,4 +207,5 @@ const validForm2 = new Validator({
   validForm2.init();
 };
 
+// validator();
 export default validator;
